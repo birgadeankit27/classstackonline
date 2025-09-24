@@ -38,7 +38,7 @@ function Contact() {
                 <strong>📞 Phone:</strong> +91 9112387807
               </p>
               <p>
-                <strong>📧 Email:</strong> contact@classstack.com
+                <strong>📧 Email:</strong> ankit@classstack.online
               </p>
             </div>
           </div>
