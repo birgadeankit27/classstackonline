@@ -9,7 +9,7 @@ import { FaReact, FaAngular } from "react-icons/fa";
 function Internships() {
   const entryId = "entry.123456789"; // Replace with your Google Form field ID
   const formBase =
-    "https://docs.google.com/forms/d/e/1FAIpQLScdE2n4fcAB2TyXOeDiqcBi6HaMcE4ara0XX7uqn1X_TCnIMw/viewform?usp=pp_url";
+    "https://docs.google.com/forms/d/e/1FAIpQLSeVDBwKNTh7aA64ND1yOYgbMLUIjUgGh5DhSB35vhhCnwK70A/viewform?usp=sharing&ouid=101918737959789993612";
 
   const internships = [
     {
