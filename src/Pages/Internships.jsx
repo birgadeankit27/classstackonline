@@ -1,29 +1,43 @@
-// src/Pages/Internships.jsx
 import React from "react";
 import InternshipCard from "../Componant/InternshipCard";
 import { motion } from "framer-motion";
 import { DiJava } from "react-icons/di";
 import { SiPython } from "react-icons/si";
-import { FaReact, FaAngular } from "react-icons/fa";
+import { FaReact, FaAngular, FaAndroid, FaBrain, FaGlobe } from "react-icons/fa";
 
 function Internships() {
-  const entryId = "entry.123456789"; // Replace with your Google Form field ID
+  const entryId = "entry.123456789"; 
   const formBase =
-    "https://docs.google.com/forms/d/e/1FAIpQLSeVDBwKNTh7aA64ND1yOYgbMLUIjUgGh5DhSB35vhhCnwK70A/viewform?usp=sharing&ouid=101918737959789993612";
+    "https://docs.google.com/forms/d/e/1FAIpQLSeVDBwKNTh7aA64ND1yOYgbMLUIjUgGh5DhSB35vhhCnwK70A/viewform?usp=pp_url";
 
   const internships = [
+    // 1. Web Development
     {
-      title: "Java Development",
+      title: "Web Development Internship",
       topics: [
-        "Core Java & OOPs",
-        "Spring Boot & REST APIs",
-        "Hibernate & JPA",
-        "Database Integration",
-        "Mini Project: Employee System",
+        "Overview",
+        "HTML5 & CSS3",
+        "Javascript",
+        "Responsive Website",
+        "Web Applications",
       ],
-      formLink: `${formBase}&${entryId}=Java+Development`,
-      icon: <DiJava className="text-orange-600" />,
+      formLink: `${formBase}&${entryId}=Web+Development+Internship`,
+      icon: <FaGlobe className="text-blue-600 text-4xl" />,
     },
+    // 2. Generative AI
+    {
+      title: "Generative AI Internship",
+      topics: [
+        "Text Generation",
+        "Image Generation",
+        "Markov Chains",
+        "Conditional GAN",
+        "Neural Style Transfer",
+      ],
+      formLink: `${formBase}&${entryId}=Generative+AI+Internship`,
+      icon: <FaBrain className="text-purple-600 text-4xl" />,
+    },
+    // 3. Python Development
     {
       title: "Python Development",
       topics: [
@@ -34,8 +48,9 @@ function Internships() {
         "Mini Project: API Service",
       ],
       formLink: `${formBase}&${entryId}=Python+Development`,
-      icon: <SiPython className="text-green-600" />,
+      icon: <SiPython className="text-green-600 text-4xl" />,
     },
+    // 4. React Development
     {
       title: "React Development",
       topics: [
@@ -46,8 +61,27 @@ function Internships() {
         "Mini Project: E-Commerce UI",
       ],
       formLink: `${formBase}&${entryId}=React+Development`,
-      icon: <FaReact className="text-blue-500" />,
+      icon: <FaReact className="text-blue-500 text-4xl" />,
     },
+    // 5. Python + React
+    {
+      title: "Python + React Development",
+      topics: [
+        "Flask/Django Backend",
+        "REST APIs",
+        "React Frontend",
+        "Database Integration",
+        "Mini Project: Blog App",
+      ],
+      formLink: `${formBase}&${entryId}=Python+React+Development`,
+      icon: (
+        <span className="flex gap-2 text-4xl">
+          <SiPython className="text-green-600" />
+          <FaReact className="text-blue-500" />
+        </span>
+      ),
+    },
+    // 6. Angular Development
     {
       title: "Angular Development",
       topics: [
@@ -58,7 +92,20 @@ function Internships() {
         "Mini Project: Admin Dashboard",
       ],
       formLink: `${formBase}&${entryId}=Angular+Development`,
-      icon: <FaAngular className="text-red-600" />,
+      icon: <FaAngular className="text-red-600 text-4xl" />,
+    },
+    // Rest internships
+    {
+      title: "Java Development",
+      topics: [
+        "Core Java & OOPs",
+        "Spring Boot & REST APIs",
+        "Hibernate & JPA",
+        "Database Integration",
+        "Mini Project: Employee System",
+      ],
+      formLink: `${formBase}&${entryId}=Java+Development`,
+      icon: <DiJava className="text-orange-600 text-4xl" />,
     },
     {
       title: "Java + React Development",
@@ -71,7 +118,7 @@ function Internships() {
       ],
       formLink: `${formBase}&${entryId}=Java+React+Development`,
       icon: (
-        <span className="flex gap-2">
+        <span className="flex gap-2 text-4xl">
           <DiJava className="text-orange-600" />
           <FaReact className="text-blue-500" />
         </span>
@@ -88,26 +135,9 @@ function Internships() {
       ],
       formLink: `${formBase}&${entryId}=Java+Angular+Development`,
       icon: (
-        <span className="flex gap-2">
+        <span className="flex gap-2 text-4xl">
           <DiJava className="text-orange-600" />
           <FaAngular className="text-red-600" />
-        </span>
-      ),
-    },
-    {
-      title: "Python + React Development",
-      topics: [
-        "Flask/Django Backend",
-        "REST APIs",
-        "React Frontend",
-        "Database Integration",
-        "Mini Project: Blog App",
-      ],
-      formLink: `${formBase}&${entryId}=Python+React+Development`,
-      icon: (
-        <span className="flex gap-2">
-          <SiPython className="text-green-600" />
-          <FaReact className="text-blue-500" />
         </span>
       ),
     },
@@ -122,11 +152,35 @@ function Internships() {
       ],
       formLink: `${formBase}&${entryId}=Python+Angular+Development`,
       icon: (
-        <span className="flex gap-2">
+        <span className="flex gap-2 text-4xl">
           <SiPython className="text-green-600" />
           <FaAngular className="text-red-600" />
         </span>
       ),
+    },
+    {
+      title: "Android Development Internship",
+      topics: [
+        "Overview",
+        "Kotlin/Flutter/React Native",
+        "Simple Apps",
+        "Advanced Apps",
+        "Cloud Apps",
+      ],
+      formLink: `${formBase}&${entryId}=Android+Development+Internship`,
+      icon: <FaAndroid className="text-green-500 text-4xl" />,
+    },
+    {
+      title: "Data Science Internship",
+      topics: [
+        "Data Cleaning & Analysis",
+        "Pandas & NumPy",
+        "Visualization (Matplotlib/Seaborn)",
+        "Machine Learning Basics",
+        "Mini Project: Predictive Model",
+      ],
+      formLink: `${formBase}&${entryId}=Data+Science+Internship`,
+      icon: <FaBrain className="text-indigo-600 text-4xl" />,
     },
   ];
 

@@ -9,7 +9,7 @@ function FAQs() {
     { q: "What is the criteria for selection?", a: "Determination to learn and grow is all what is needed." },
     { q: "Can I complete multiple tracks together?", a: "We believe to provide an actual learning environment, we have limited our internship offerings to 1 track per month for each student. This allows students to explore the chosen track in-depth and get quality results." },
     { q: "When does the internships starts?", a: "Each batch starts at the start or mid of the month and ends on start or mid of next month respectively." },
-    { q: "Is there any fees for the internship?", a: "The internship is completely free. However, a documentation fee of ₹119 must be paid to cover the processing charges." },
+    { q: "Is there any fees for the internship?", a: "The internship is completely free. However, a documentation fee of ₹99 must be paid to cover the processing charges." },
     { q: "Is the internship Offline or Online?", a: "All our internships are conducted in Virtual mode (Online)." },
     { q: "When will I receive the Offer Letter?", a: "We process the Offer Letters at the mid & end of month in batches. We request you to please wait in the mean time. If you have received the Task Submission Email, we request you to review your spam folder for the Offer Letter. Kindly contact us via email if you are unable to find it." },
     { q: "CIN is showing Invalid", a: "The CIN will activate once you have been issued your Certificate of Completion." },
